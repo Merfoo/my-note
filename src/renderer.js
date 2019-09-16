@@ -27,5 +27,11 @@
  */
 
 import './index.css';
+import Vue from 'vue';
+import App from './App.vue';
+
+new Vue({
+  render: h => h(App)
+}).$mount('#app');
 
 console.log('👋 This message is being logged by "renderer.js", included via webpack');
